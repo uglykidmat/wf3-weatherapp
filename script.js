@@ -50,10 +50,15 @@ function pageUpdater(){
     document.getElementById("weather-details-humidity").innerHTML=reqResponse.current.humidity;
     document.getElementById("weather-details-precipitation").innerHTML=reqResponse.current.precip_mm;
     document.getElementById("weather-details-windspeed").innerHTML=reqResponse.current.wind_kph;
-   //picto qui change à chaque requête
+    //picto moche qui change à chaque requête
     document.getElementById("weather-mood-icon").innerHTML="<img src=\""+reqResponse.current.condition.icon+"\"/>";
-
+    //TODO L'animation fadeIn du container ?
+    document.getElementById("container-weather").classList.add("fade-in");
+    setTimeout(() => {
+        document.getElementById("container-weather").classList.remove("fade-in");
+      }, 1000)
    //TODO alignement infos mood+details
+   
 }
 
 function updateProgress(event) {
