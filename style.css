@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
 }
-p, span, li{
+input, button, p, span, li{
     font-family: 'Montserrat', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
@@ -60,7 +60,11 @@ div#container-location{
 /*_________________________INPUT__*/
 
 div#container-location input, button{
+    color:aliceblue;
     padding:0.5em;
+    border-radius: 1.5em;
+    border:none;
+    background:rgba( 0, 0, 0, .3);
 }
 
 
@@ -190,10 +194,19 @@ div#weather-mood-icon img{
     div#container-location{
         display:flex;
         flex-direction: column;
-        align-items: center;
+
         margin:1em;
         align-self: center;
     }
+
+        div#container-location form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            div#container-location form input{
+                margin-bottom:0.5em;
+            }
     
     div#weather-mood-details-block{
         order:5;
