@@ -156,6 +156,11 @@ div#weather-mood-icon svg{
     height: auto;
 }
 
+div#weather-mood-icon img{
+    transform: scale(1.5);
+}
+
+
 /*____________________RESPONSIVE__*/
 
 @media only screen and (max-width:600px){
@@ -173,6 +178,8 @@ div#weather-mood-icon svg{
         width: fit-content;
         height: auto;
         order:4;
+        margin-top:1em;
+        margin-bottom: -0.5em;
     }
 
     div#weather-mood-icon svg{

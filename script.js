@@ -50,10 +50,10 @@ function pageUpdater(){
     document.getElementById("weather-details-humidity").innerHTML=reqResponse.current.humidity;
     document.getElementById("weather-details-precipitation").innerHTML=reqResponse.current.precip_mm;
     document.getElementById("weather-details-windspeed").innerHTML=reqResponse.current.wind_kph;
-   //TODO picto qui change
+   //picto qui change à chaque requête
+    document.getElementById("weather-mood-icon").innerHTML="<img src=\""+reqResponse.current.condition.icon+"\"/>";
+
    //TODO alignement infos mood+details
-
-
 }
 
 function updateProgress(event) {
